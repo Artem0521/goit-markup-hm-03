@@ -1,0 +1,251 @@
+/* основной текс #757575  */
+
+/* вторичний цвет текста #212121 */
+
+/* белый цвет #FFFFFF */
+
+/* акцент #2196F3 */
+
+/* цвет фона #FFFFFF */
+
+/* вторичный цвет фона #F5F4FA */
+
+/* третий цвет фона #2F303A */
+
+/* адресс в футоре цвет rgba(255, 255, 255, 0.6) */
+/* Цвет логотипа  #000000 */
+
+
+:root {
+    --primary-text-color: #757575;
+
+    --secondary-text-color: #212121;
+
+    --white-text-color: #FFFFFF;
+
+    --accent-color: #2196F3;
+
+    --main-fon-color: #FFFFFF;
+
+    --secondary-fon-color:#F5F4FA;
+
+    --third-fon-color: #2F303A;
+
+    --footer-adress-color: rgba(255, 255, 255, 0.6);
+
+    --logo-color: #000000;
+}
+
+
+body  {
+    background-color: var(--main-fon-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.list{
+    list-style: none;
+}
+/* Портфолио - заголовки спрятал */
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* Стили index html */
+
+/* Logo */
+
+.logo {
+    
+    color: var(--logo-color);
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo-web  {
+    color: var(--accent-color);
+}
+
+
+/* Site nav */
+
+.site-nav .link {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+} 
+
+.adress-nav .link {
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+
+.hero {
+    --fon-color:#2F303A;
+    background-color: var(--fon-color);
+}
+.hero .title {
+    color: var(--white-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button.order {
+    font-family: inherit;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+
+
+/* Feature */
+
+.feature .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+
+/* чем мы занимаемся */
+.work .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* Наща клманда */
+.team {
+    background-color: var(--secondary-fon-color);
+}
+.team .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.team-list .name {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18; 
+}
+.team-list .job {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+
+
+/* Подвал */
+.under {
+    background-color: var(--third-fon-color);
+}
+.log {
+    color: var(--white-text-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+}
+.adress {
+    color: var(--white-text-color);
+    
+    font-style: normal;
+    text-decoration: none;
+
+}
+.contact {
+    color: var(--footer-adress-color);
+
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+
+/* Порфолио разметка */
+
+/* кнопки */
+
+.button {
+    font-family: inherit;
+    cursor: pointer;
+
+    background-color: var(--secondary-fon-color);
+    color: var(--secondary-text-color);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+
+}
+.button:hover,
+.button:focus {
+
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+
+/* Проекты стилизация */
+
+.project .title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project .concept {
+    font-size: 16px;
+    line-height: 1.87;
+}
